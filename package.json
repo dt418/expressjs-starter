@@ -10,6 +10,10 @@
     "build": "swc src -d dist --source-maps --copy-files",
     "build:tsc": "tsc && tsc-alias",
     "test": "jest --forceExit --detectOpenHandles",
+    "vitest": "vitest",
+    "vitest:coverage": "vitest run --coverage",
+    "vitest:watch": "vitest --watch",
+    "vitest:ui": "vitest --ui",
     "lint": "eslint src",
     "format": "prettier src --write",
     "lint:fix": "npm run lint -- --fix",
@@ -64,6 +68,7 @@
     "@types/swagger-ui-express": "^4.1.7",
     "@typescript-eslint/eslint-plugin": "^8.19.0",
     "@typescript-eslint/parser": "^8.19.0",
+    "@vitest/coverage-v8": "^2.1.8",
     "cross-env": "^7.0.3",
     "eslint": "^9.17.0",
     "eslint-config-prettier": "^9.1.0",
@@ -81,6 +86,7 @@
     "ts-node": "^10.9.2",
     "tsc-alias": "^1.8.10",
     "tsconfig-paths": "^4.2.0",
-    "typescript": "^5.7.2"
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
   }
 }
