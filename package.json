@@ -18,7 +18,7 @@
   },
   "lint-staged": {
     "src/**/*.ts": [
-      "eslint --fix",
+      "eslint --ignore-path .gitignore --ext .ts src --fix",
       "prettier --write"
     ]
   },
